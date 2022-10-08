@@ -7,7 +7,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 30px;
   margin-bottom: 0px;
   padding: 10px 20%;
   cursor: default;
@@ -20,7 +20,8 @@
 
 .skills-texts P {
   text-align: justify;
-  margin-top: -20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   word-spacing: 3px;
@@ -42,7 +43,8 @@
   position: relative;
   width: 220px;
   height: 250px;
-  background: #191919;
+  background: #000000; /*#191919; */
+  cursor: grab;
   opacity: 0;
   animation: fadeIn 1s linear forwards;
   animation-delay: 0.1s;
@@ -81,14 +83,13 @@
   width: 100%;
   height: 100%;
   fill: transparent;
-  stroke-width: 2;
-  stroke: #191919;
+  stroke-width: 1;
+  stroke: #ffffff;
   transform: translate(5px, 5px);
 }
 
 .skillCard .card .percent svg circle:nth-child(2) {
   stroke: var(--clr);
-  stroke-dasharray: 440;
   opacity: 1;
 }
 
@@ -96,8 +97,6 @@
   position: absolute;
   inset: 5px;
   z-index: 10;
-  transform: rotate(calc(3.6deg * var(--num)));
-  /* 360deg /100 = 3.6 */
   animation: animateDot 2s linear forwards;
 }
 
@@ -119,9 +118,9 @@
   transform: translateX(-50%);
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: 40%;
   background: var(--clr);
-  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+  box-shadow: 0px 0px 10px var(--clr), 0px 0px 30px var(--clr);
 }
 
 .number {
