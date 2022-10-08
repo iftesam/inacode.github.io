@@ -43,7 +43,7 @@
   position: relative;
   width: 220px;
   height: 250px;
-  background: #000000; /*#191919; */
+  background: #000000;
   cursor: grab;
   opacity: 0;
   animation: fadeIn 1s linear forwards;
