@@ -27,10 +27,12 @@ body {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
   font-size: 45px;
+  cursor: pointer;
 }
 
 .Error p {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
+  cursor: pointer;
 }
