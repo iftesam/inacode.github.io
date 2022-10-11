@@ -321,12 +321,11 @@ body {
 }
 
 .navicon:nth-child(5) {
-  background-color: rgb(255, 10, 10);
   white-space: nowrap;
 }
 
 .navicon:nth-child(6) {
-  background-color: rgb(255, 10, 10);
+  white-space: nowrap;
 }
 
 .navicon a {
@@ -344,16 +343,6 @@ body {
 #downloadresume span {
   font-size: 18px;
   color: rgb(255, 255, 255);
-}
-#videobanners:hover {
-  /* padding: 8px 5px;
-  margin: 9px 1px; */
-  background-color: rgba(255, 0, 0, 0.8);
-  border: none;
-  /* border-radius: 8px; */
-  cursor: cursor;
-  transition: all 0.2s ease 0s;
-  color: #1bd1ff;
 }
 
 a#videobanners strong {
