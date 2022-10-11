@@ -26,11 +26,11 @@ body {
 .Error h1 {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .Error p {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.2em;
+  font-size: 1em;
 }
