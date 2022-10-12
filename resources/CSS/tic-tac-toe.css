@@ -116,14 +116,14 @@ button:hover {
 }
 
 .playerWin {
-  color: rgb(255, 255, 255);
+  color: #1bddff;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   font-family: "Noto Emoji", monospace;
 }
 
 .computerWin {
-  color: #ffffff;
+  color: #ffadad;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   font-family: "Noto Emoji", monospace;
