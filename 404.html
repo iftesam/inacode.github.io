@@ -8,6 +8,8 @@
     <script src="./resources/JS/header.js" defer></script>
     <link rel="stylesheet" href="./resources/CSS/404error.css" />
     <link rel="stylesheet" href="./resources/CSS/footer.css" />
+    <link rel="stylesheet" href="./resources/CSS/tic-tac-toe.css" />
+    <script src="./resources/JS/tic-tac-toe.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -125,7 +127,17 @@
       <div class="Error">
         <h1>404 - Page Not Found</h1>
         <br />
-        <p>There is no such page as the one you are looking for!</p>
+        <p>
+          There is no such page as the one you are looking for! Anyway, let's
+          play tic-tac-toe. I selected "X", so you got "O". Come on, beat me!
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="play-area"></div>
+        <h2 id="winner"></h2>
+        <button onclick="reset_board()">REMATCH</button>
       </div>
     </main>
     <footer>

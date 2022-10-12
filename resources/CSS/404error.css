@@ -10,27 +10,34 @@ body {
 }
 
 .Error {
-  background: linear-gradient(
-    180.2deg,
-    rgb(30, 33, 48) 6.8%,
-    rgb(74, 98, 110) 131%
-  );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 20vh;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .Error h1 {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
   font-size: 45px;
+  padding-top: 100px;
 }
 
 .Error p {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
-  font-size: 1em;
+  font-size: 1.2em;
+  text-align: justify;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20%;
+  cursor: default;
+  margin-top: -30px;
 }
