@@ -11,7 +11,7 @@
 h1 {
   font-size: 5rem;
   margin-bottom: 0.5em;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Courier New", Courier, monospace;
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
@@ -119,30 +119,18 @@ button:hover {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
-  font-family: 'Noto Emoji', monospace;
+  font-family: "Noto Emoji", monospace;
 }
 
 .computerWin {
   color: #ffffff;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
-  font-family: 'Noto Emoji', monospace;
+  font-family: "Noto Emoji", monospace;
 }
 
 .draw {
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
-}
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5em;
-  }
-
-  h2 {
-    margin-top: 1em;
-    font-size: 1.3rem;
-  }
 }
