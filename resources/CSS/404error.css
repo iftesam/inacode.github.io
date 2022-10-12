@@ -24,6 +24,9 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 45px;
   padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
 }
 
 .Error p {
@@ -40,4 +43,17 @@ body {
   padding: 20px 20%;
   cursor: default;
   margin-top: -30px;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .Error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
 }
