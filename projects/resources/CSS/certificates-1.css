@@ -1,7 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180.2deg,
+    rgb(30, 33, 48) 6.8%,
+    rgb(74, 98, 110) 131%
+  );
 }
 
 .certificate-texts {

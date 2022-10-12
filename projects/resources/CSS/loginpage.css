@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  background-image: url("../images/nature.jpg");
 }
 .full-screen-container {
   background-image: url("../images/nature.jpg");
