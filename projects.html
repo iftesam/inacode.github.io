@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./resources/CSS/header.css" />
     <link rel="stylesheet" href="./resources/CSS/rock-paper-scissor.css" />
     <script src="./resources/JS/header.js" defer></script>
-    <link rel="stylesheet" href="./resources/CSS/404error.css" />
-    <link rel="stylesheet" href="./resources/CSS/footer.css" />
+    <link rel="stylesheet" href="./resources/CSS/search-box.css" />
+    <link rel="stylesheet" href="./resources/CSS/footer-project.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -123,98 +123,100 @@
       </div>
     </header>
     <main>
-      <div class="Error">
-        <h1 id="title-error">🔧 Under Construction</h1>
-        <br />
-        <p id="paragraph-1">
-          The page is under maintainance! Anyway, let's play
-          Rock-Paper-Scissors. Come on, beat me!
-        </p>
-        <p id="paragraph-2">The page is under maintainance!</p>
-      </div>
-      <form>
-        <input type="radio" id="rock-rock" name="rock-paper-scissors" />
-        <input type="radio" id="rock-paper" name="rock-paper-scissors" />
-        <input type="radio" id="rock-scissors" name="rock-paper-scissors" />
-        <input type="radio" id="paper-rock" name="rock-paper-scissors" />
-        <input type="radio" id="paper-paper" name="rock-paper-scissors" />
-        <input type="radio" id="paper-scissors" name="rock-paper-scissors" />
-        <input type="radio" id="scissors-rock" name="rock-paper-scissors" />
-        <input type="radio" id="scissors-paper" name="rock-paper-scissors" />
-        <input type="radio" id="scissors-scissors" name="rock-paper-scissors" />
-
-        <div>
-          <h1>Rock-Paper-Scissors</h1>
-          <div id="hands">
-            <div class="hand" id="computer-hand">
-              <div class="fist"></div>
-              <div class="finger finger-1"></div>
-              <div class="finger finger-2"></div>
-              <div class="finger finger-3"></div>
-              <div class="finger finger-4"></div>
-              <div class="thumb"></div>
-              <div class="arm"></div>
-            </div>
-
-            <div class="hand" id="user-hand">
-              <div class="fist"></div>
-              <div class="finger finger-1"></div>
-              <div class="finger finger-2"></div>
-              <div class="finger finger-3"></div>
-              <div class="finger finger-4"></div>
-              <div class="thumb"></div>
-              <div class="arm"></div>
-            </div>
-
-            <div id="icons">
-              <div>
-                <label for="rock-rock"
-                  ><img id="game-icon" src="./resources/images/rock-game.png"
-                /></label>
-                <label for="paper-rock"
-                  ><img id="game-icon" src="./resources/images/rock-game.png"
-                /></label>
-                <label for="scissors-rock"
-                  ><img id="game-icon" src="./resources/images/rock-game.png"
-                /></label>
-              </div>
-              <div>
-                <label for="rock-paper"
-                  ><img id="game-icon" src="./resources/images/paper-game.png"
-                /></label>
-                <label for="paper-paper"
-                  ><img id="game-icon" src="./resources/images/paper-game.png"
-                /></label>
-                <label for="scissors-paper"
-                  ><img id="game-icon" src="./resources/images/paper-game.png"
-                /></label>
-              </div>
-              <div>
-                <label for="rock-scissors"
-                  ><img
-                    id="game-icon"
-                    src="./resources/images/scissors-game.png"
-                /></label>
-                <label for="paper-scissors"
-                  ><img
-                    id="game-icon"
-                    src="./resources/images/scissors-game.png"
-                /></label>
-                <label for="scissors-scissors"
-                  ><img
-                    id="game-icon"
-                    src="./resources/images/scissors-game.png"
-                /></label>
-              </div>
-            </div>
+      <div class="search-box">
+        <div class="content">
+          <div class="search">
+            <input
+              type="text"
+              class="search__input"
+              aria-label="search"
+              placeholder="Search here or click any of the suggestions below..."
+            />
+            <button class="search__submit" aria-label="submit search">
+              <h1>🔍</h1>
+            </button>
           </div>
         </div>
+      </div>
+      <div class="suggestions">
+        <h1>Suggestions:</h1>
+        <nav class="recommendation">
+          <ul class="suglinks">
+            <li class="recommand">
+              <p>Front-End Web Development</p>
+            </li>
+            <li class="recommand"><p>LeetCode</p></li>
+            <li class="recommand">
+              <p>Game-Development</p>
+            </li>
+            <li class="recommand"><p>JavaScript</p></li>
+            <li class="recommand">
+              <p>Python</p>
+            </li>
+            <li class="recommand"><p>IOS Development</p></li>
+            <li class="recommand"><p>Cool Stuffs</p></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="all-projects">
+        <div class="flex-grid">
+          <article class="col">
+            <a
+              class="project-link"
+              href="https://www.w3schools.com"
+              target="_blank"
+            >
+              <div class="image-box">
+                <img src="./Resources/images/thumbnail-final.jpg" alt="" />
+                <div class="search-tags">
+                  <p>
+                    Hello world Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Blanditiis quisquam temporibus sapiente
+                    sunt doloremque tempore molestias, aut corporis consectetur
+                    doloribus placeat quis laborum vitae tempora, id atque?
+                    Adipisci, dolorum quis!
+                  </p>
+                </div>
+              </div>
+              <h1 class="headline"><br />Hello world!</h1>
+              <p class="overview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi facilis voluptatum illum, porro eum quo obcaecati
+                dolor accusantium, libero veniam vitae adipisci deserunt ad
+                perspiciatis corrupti esse itaque maiores nihil.
+              </p>
+            </a>
+          </article>
 
-        <div id="message">
-          <h2></h2>
-          <input id="button-refresh" type="reset" value="Fresh Start!" />
+          <article class="col">
+            <a
+              class="project-link"
+              href="https://www.w3schools.com"
+              target="_blank"
+            >
+              <div class="image-box">
+                <img src="./Resources/images/thumbnail-final.jpg" alt="" />
+                <div class="search-tags">
+                  <p>
+                    Hello world Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Blanditiis quisquam temporibus sapiente
+                    sunt doloremque tempore molestias, aut corporis consectetur
+                    doloribus placeat quis laborum vitae tempora, id atque?
+                    Adipisci, dolorum quis!
+                  </p>
+                </div>
+              </div>
+              <h1 class="headline"><br />Hello world!</h1>
+              <p class="overview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi facilis voluptatum illum, porro eum quo obcaecati
+                dolor accusantium, libero veniam vitae adipisci deserunt ad
+                perspiciatis corrupti esse itaque maiores nihil.
+              </p>
+            </a>
+          </article>
         </div>
-      </form>
+      </div>
     </main>
     <footer>
       <div class="waves">
