@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./resources/CSS/header.css" />
     <link rel="stylesheet" href="./resources/CSS/rock-paper-scissor.css" />
     <script src="./resources/JS/header.js" defer></script>
+    <script src="./resources/JS/projects.js" defer></script>
     <link rel="stylesheet" href="./resources/CSS/search-box.css" />
     <link rel="stylesheet" href="./resources/CSS/footer-project.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -129,8 +130,10 @@
             <input
               type="text"
               class="search__input"
+              id="search-item"
               aria-label="search"
               placeholder="Search..."
+              onkeyup="search()"
             />
             <button class="search__submit" aria-label="submit search">
               <h1>🔍</h1>
@@ -160,7 +163,7 @@
         </nav>
       </div>
       <div id="all-projects">
-        <div class="flex-grid">
+        <div class="flex-grid" id="flex-grid">
           <article class="col">
             <a
               class="project-link"
@@ -170,22 +173,11 @@
               <div class="image-box">
                 <img src="./Resources/images/thumbnail-final.jpg" alt="" />
                 <div class="search-tags">
-                  <p>
-                    Hello world Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Blanditiis quisquam temporibus sapiente
-                    sunt doloremque tempore molestias, aut corporis consectetur
-                    doloribus placeat quis laborum vitae tempora, id atque?
-                    Adipisci, dolorum quis!
-                  </p>
+                  <h6>Python JAVA HTML</h6>
                 </div>
               </div>
               <h1 class="headline"><br />Hello world!</h1>
-              <p class="overview">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi facilis voluptatum illum, porro eum quo obcaecati
-                dolor accusantium, libero veniam vitae adipisci deserunt ad
-                perspiciatis corrupti esse itaque maiores nihil.
-              </p>
+              <p class="overview">CSS</p>
             </a>
           </article>
 
@@ -198,13 +190,7 @@
               <div class="image-box">
                 <img src="./Resources/images/thumbnail-final.jpg" alt="" />
                 <div class="search-tags">
-                  <p>
-                    Hello world Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Blanditiis quisquam temporibus sapiente
-                    sunt doloremque tempore molestias, aut corporis consectetur
-                    doloribus placeat quis laborum vitae tempora, id atque?
-                    Adipisci, dolorum quis!
-                  </p>
+                  <h6>HTML CSS</h6>
                 </div>
               </div>
               <h1 class="headline"><br />Hello world!</h1>
