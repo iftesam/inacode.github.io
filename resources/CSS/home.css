@@ -2,12 +2,20 @@
 
 body {
   background: #343f4f;
+  margin: 0;
+  padding: 0;
 }
 main {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+#canvas {
+  display: inline-block;
+  background-color: #343f4f;
 }
 
 .static-txt {
@@ -85,6 +93,7 @@ main {
 
 .wrapper {
   display: inline-flex;
+  position: absolute;
 }
 
 .wrapper .dynamic-txts {
