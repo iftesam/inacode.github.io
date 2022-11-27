@@ -3,10 +3,10 @@ var w, h, loopId, id, canvas, ctx, particles;
 var options = {
   particleColor: "rgba(255,255,255)",
   lineColor: "rgba(255, 255, 255, 0.135)",
-  particleAmount: 180,
+  particleAmount: 185,
   defaultRadius: 0.9,
   variantRadius: 2.5,
-  defaultSpeed: 0.3,
+  defaultSpeed: 0.4,
   variantSpeed: 0.1,
   linkRadius: 60,
 };
@@ -71,7 +71,7 @@ function linkPoints(point, hubs) {
     if (opacity > 0) {
       ctx.lineWidth = 0.5;
       ctx.strokeStyle =
-        "rgba(" + rgb[3] + "," + rgb[1] + "," + rgb[3] + "," + opacity + ")";
+        "rgba(" + rgb[1] + "," + rgb[1] + "," + rgb[4] + "," + opacity + ")";
       ctx.beginPath();
       ctx.moveTo(point.x, point.y);
       ctx.lineTo(hubs[i].x, hubs[i].y);
