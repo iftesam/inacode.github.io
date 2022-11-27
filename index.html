@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./resources/CSS/header.css" />
     <script src="./resources/JS/header.js" defer></script>
-    <link rel="stylesheet" href="./resources/CSS/loginpage.css" />
+    <script src="./resources/JS/home.js" defer></script>
+    <link rel="stylesheet" href="./resources/CSS/home.css" />
     <link rel="stylesheet" href="./resources/CSS/footer.css" />
-    <title>Your Favorite Page | Login</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>Home | INACODE</title>
     <link
       rel="shortcut icon"
       type="image"
@@ -67,7 +72,7 @@
         <p id="portfolio"><strong>≡</strong>Portfolio</p>
       </div>
       <div class="main-banner">
-        <a
+        <a href="https://www.inacode.io/"
           ><img
             class="logo"
             src="./resources/images/inacode-logo.png"
@@ -121,24 +126,33 @@
         </div>
       </div>
     </header>
-    <div class="full-screen-container">
-      <div class="login-container">
-        <h1 class="login-title">Welcome Back!</h1>
-        <form class="form">
-          <div class="input-group success">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-            <span class="msg">Valid email</span>
-          </div>
-          <div class="input-group error">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
-            <span class="msg">Incorrect password</span>
-          </div>
-          <button type="submit" class="login-button">Login</button>
-        </form>
+    <main>
+      <div class="static-txt">
+        <p>
+          <strong> </strong>Click on the <strong>≡</strong>Portfolio button to
+          get started.
+        </p>
       </div>
-    </div>
+
+      <div class="big-container">
+        <div class="container">
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <ul class="dynamic-txts">
+          <li>
+            <span>Welcome to <strong>inacode.io</strong>!</span>
+          </li>
+          <li>
+            <span>Welcome to <strong>inacode.io</strong></span>
+          </li>
+          <li><span>For the coders, by a coder.</span></li>
+        </ul>
+      </div>
+    </main>
     <footer>
       <div class="waves">
         <div class="wave" id="wave1"></div>

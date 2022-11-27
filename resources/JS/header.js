@@ -106,3 +106,9 @@ document
     document.querySelector(".dropdownul").style.pointerEvents = "none";
     document.querySelector("#blank-background-dropdown").style.display = "none";
   });
+
+document.getElementById("portfolio").addEventListener("click", function () {
+  let nav = document.querySelectorAll(".navicon");
+  document.querySelector(".static-txt").style.display = "none";
+  document.querySelector(".big-container").style.display = "none";
+});
