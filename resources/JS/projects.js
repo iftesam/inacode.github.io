@@ -71,6 +71,5 @@ document.getElementById("cs").addEventListener("click", function () {
 document.getElementById("all").addEventListener("click", function () {
   var text = document.getElementById("search-item");
   text.value = "See-All";
-  text.focus();
   text.click();
 });

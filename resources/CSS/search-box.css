@@ -187,6 +187,16 @@ body {
   cursor: pointer;
 }
 
+#all{
+  color:#58caf4;
+  transition: all 0.2s ease 0s;
+}
+
+#all:hover {
+  color: #ff951b;
+  cursor: pointer;
+}
+
 #all-projects {
   height: 85vh;
   overflow-y: scroll;
