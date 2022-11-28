@@ -133,7 +133,8 @@
               id="search-item"
               aria-label="search"
               placeholder="Search..."
-              onkeyup="search()"
+              oninput="search()"
+              onclick="search()"
             />
             <button class="search__submit" aria-label="submit search">
               <h1>🔍</h1>
@@ -147,18 +148,19 @@
         <nav class="recommendation">
           <ul class="suglinks">
             <li class="recommand">
-              <p>Front-End Web Development</p>
+              <p id="fwd">Front-End Web Development</p>
             </li>
-            <li class="recommand"><p>LeetCode</p></li>
+            <li class="recommand"><p id="lc">LeetCode</p></li>
             <li class="recommand">
-              <p>Game-Development</p>
+              <p id="gd">Game-Development</p>
             </li>
-            <li class="recommand"><p>JavaScript</p></li>
+            <li class="recommand"><p id="js">JavaScript</p></li>
             <li class="recommand">
-              <p>Python</p>
+              <p id="python">Python</p>
             </li>
-            <li class="recommand"><p>IOS Development</p></li>
-            <li class="recommand"><p>Cool Stuffs</p></li>
+            <li class="recommand"><p id="ios">IOS Development</p></li>
+            <li class="recommand"><p id="cs">Cool-Stuffs</p></li>
+            <li class="recommand"><p id="all">See-All</p></li>
           </ul>
         </nav>
       </div>
@@ -173,7 +175,7 @@
               <div class="image-box">
                 <img src="./Resources/images/thumbnail-final.jpg" alt="" />
                 <div class="search-tags">
-                  <h6>Python JAVA HTML</h6>
+                  <h6>See-All Python JAVA HTML</h6>
                 </div>
               </div>
               <h1 class="headline"><br />Hello world!</h1>
@@ -190,7 +192,7 @@
               <div class="image-box">
                 <img src="./Resources/images/thumbnail-final.jpg" alt="" />
                 <div class="search-tags">
-                  <h6>HTML CSS</h6>
+                  <h6>See-All HTML CSS</h6>
                 </div>
               </div>
               <h1 class="headline"><br />Hello world!</h1>
