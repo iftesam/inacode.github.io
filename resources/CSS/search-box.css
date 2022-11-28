@@ -148,11 +148,11 @@ body {
     position: relative;
     top: -70px;
     font-size: 40px;
-    color: hsl(30, 100%, 55%);
+    color: hsl(0, 0%, 100%);
     cursor: default;
     margin-top: -30px;
     margin-bottom: -20px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Noto Emoji", "Helvetica Neue", Arial, Helvetica, sans-serif;
   }
 }
 
@@ -187,8 +187,8 @@ body {
   cursor: pointer;
 }
 
-#all{
-  color:#58caf4;
+#all {
+  color: #58caf4;
   transition: all 0.2s ease 0s;
 }
 
