@@ -73,3 +73,8 @@ document.getElementById("all").addEventListener("click", function () {
   text.value = "";
   text.click();
 });
+
+// document.getElementById("content").addEventListener("click", function () {
+//   var text = document.getElementById("search-item");
+//   text.focus();
+// });
