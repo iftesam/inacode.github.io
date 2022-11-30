@@ -74,6 +74,7 @@ document.getElementById("all").addEventListener("click", function () {
   text.click();
 });
 
+//for safari browser
 // document.getElementById("content").addEventListener("click", function () {
 //   var text = document.getElementById("search-item");
 //   text.focus();

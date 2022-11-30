@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@500&family=Work+Sans&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <title>Colorizing Black-and-White Images | INACODE</title>
+    <link rel="stylesheet" href="./resources/CSS/project-detail.css" />
+    <script defer src="./resources/JS/project-detail.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <a href="https://www.inacode.io/"
+          ><img
+            class="projectlogo"
+            src="../resources/images/inacode-logo.png"
+            alt="HOME"
+        /></a>
+    </div>
+    <main>
+      <div class="projectbox">
+        <div class="title">
+          <h1>Colorizing Black-and-White Images</h1>
+        </div>
+        <div class="youtube-embed">
+          <iframe
+            width="972"
+            height="547"
+            src="https://www.youtube.com/embed/HRq6TqCa9sU"
+            title="Colorizing Black and White Images Using Python"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="algorithm-title">
+          <h3>Algorithm:</h3>
+          <p>
+            With the neural network, Black-and-White colorization was possible.<br />
+            The algorithm consists of four steps, which are:<br /><div id="eachsteps">1.
+            Converting black and white to Lab photo <br />2. Try to understand the
+            contents of the photo <br />3. Specific Database comparison between
+            black-and-white grade scale pixels <br />4. Try to map colors from the
+            database</div><br />
+            <div id="bracket">(In the video above, the dog image explains each
+            step.) </div>
+          </p>
+        </div>
+        <div class="results">
+          <h3>Results:</h3>
+            <div class="resultbox">
+              <div class="imagelist">
+                <div><img src="./resources/images/b&w-project/pic0-b&w-project.png" alt=""></div>
+                <div><img src="./resources/images/b&w-project/pic-1-b&w-project.png" alt=""></div>
+                <div><img src="./resources/images/b&w-project/pic-2-b&w-project.png" alt=""></div>
+                <div><img src="./resources/images/b&w-project/pic3-b&w-project.png" alt=""></div>
+              </div>
+            </div>
+        </div>
+        <div class="github">
+          <h3>Github Repository Used:</h3>
+            <div class="gitbox">
+              <a href="https://github.com/richzhang/colorization/tree/caffe" target="_blank">
+                <div class="imagelist">
+                  <div><img src="./resources/images/b&w-project/github-b&w-project.png" alt=""></div>
+                </div>
+              </a>
+            </div>
+        </div>
+        <div class="code">
+          <h3>Code Snippet (Python):</h3>
+          <p>
+            <div id="eachsteps">
+            Need to install <strong>openCV</strong> and <strong>numpy</strong> on the system to run the code.</div>
+          </p>
+          <div class="codebox">
+            <div class="imagelist">
+                <div><img src="./resources/images/b&w-project/code-snippet-b&w-project.png" alt=""></div>
+              </div>
+          </div>
+        </div>
+        <div class="download">
+          <h3>Download the program (.zip):</h3>
+
+          <div class="container">
+            <div class="downloadbox">
+              <a
+                    href="./resources/images/b&w-project/BW2Color.zip"
+                    download="BW2Color.zip"
+                    id="BW2Color"
+                    >
+                <button type="button" data-dl>
+                  <span class="dl-icon"></span><span>&#x44;&#x6F;&#x77;&#x6E;&#x6C;&#x6F;&#x61;&#x64;</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </main>
+
+  </body>
+</html>
