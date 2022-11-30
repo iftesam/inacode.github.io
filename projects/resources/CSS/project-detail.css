@@ -524,6 +524,11 @@ button span + span {
       rgb(89, 179, 179) 80%,
       rgb(96, 213, 213) 100%
     );
+    background: linear-gradient(
+    90deg,
+    rgb(30, 33, 48) 6.8%,
+    rgb(74, 98, 110) 131%
+  );
   }
   }
 }
