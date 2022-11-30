@@ -75,6 +75,23 @@ main {
   overflow: hidden;
 }
 
+@media (max-width: 425px) {
+  .youtube-embed {
+    margin-top: -4%;
+    margin-left: -8%;
+    position: absolute;
+    padding-bottom: 57%;
+    width: 100%;
+  }
+
+  .youtube-embed iframe {
+    width: 70%;
+    position: absolute;
+    height: 57%;
+    overflow: hidden;
+  }
+}
+
 .algorithm-title {
   margin-top: 37%;
   border-top: 1px solid rgb(255, 255, 255);
@@ -495,10 +512,10 @@ button span + span {
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(
-    90deg,
-    rgb(30, 33, 48) 6.8%,
-    rgb(74, 98, 110) 131%
-  );
+      90deg,
+      rgb(30, 33, 48) 6.8%,
+      rgb(74, 98, 110) 131%
+    );
   }
 }
 
