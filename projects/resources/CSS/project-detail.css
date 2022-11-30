@@ -515,10 +515,10 @@ button span + span {
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-    background-image: linear-gradient(
-      to right,
-      rgb(221, 128, 159),
-      rgb(255, 148, 114)
+    background: linear-gradient(
+      90deg,
+      rgb(30, 33, 48) 6.8%,
+      rgb(99, 150, 173) 131%
     );
   }
 }
