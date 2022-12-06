@@ -1,3 +1,5 @@
+document.getElementById("inacodeLink").href = "http://www.inacode.io";
+
 document.addEventListener("DOMContentLoaded", function () {
   this.addEventListener("click", (e) => {
     let tar = e.target;

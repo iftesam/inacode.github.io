@@ -1,3 +1,5 @@
+document.getElementById("inacodeLink").href = "http://www.inacode.io";
+
 document.getElementById("portfolio").addEventListener("click", function () {
   let nav = document.querySelectorAll(".navicon");
   nav[0].style.display = "inline-block";
