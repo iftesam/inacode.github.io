@@ -2,6 +2,8 @@ document.getElementById("inacodeLink").href = "http://www.inacode.io";
 document.getElementById("backward").href = "";
 document.getElementById("videobanners").href =
   "https://www.youtube.com/@inacode9173";
+document.getElementById("videobanners").target = "_blank";
+
 document.getElementById("portfolio").addEventListener("click", function () {
   let nav = document.querySelectorAll(".navicon");
   nav[0].style.display = "inline-block";
