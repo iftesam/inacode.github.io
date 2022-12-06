@@ -1,4 +1,5 @@
 document.getElementById("inacodeLink").href = "http://www.inacode.io";
+document.getElementById("backward").href = "";
 
 document.getElementById("portfolio").addEventListener("click", function () {
   let nav = document.querySelectorAll(".navicon");
