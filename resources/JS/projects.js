@@ -19,9 +19,9 @@ const search = () => {
   }
 };
 
-document.getElementById("fwd").addEventListener("click", function () {
+document.getElementById("wd").addEventListener("click", function () {
   var text = document.getElementById("search-item");
-  text.value = "Front-End Web Development";
+  text.value = "Web Development";
   text.focus();
   text.click();
 });
