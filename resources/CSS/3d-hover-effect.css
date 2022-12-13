@@ -10,7 +10,9 @@
   --typescript-color: #7cc480;
   --react-color: #3f77ae;
   --design-color: #f200ff;
-  --white-color: #ffffff;
+  --github-color: #ffffff;
+  --blockchain-color: rgba(4, 242, 255, 0.37);
+  --commandline-color: #94605b;
 }
 
 .container {
@@ -68,14 +70,41 @@
   filter: blur(50px);
 }
 
-#html-css-javascript:hover:before {
+#commandline:hover:before {
   content: "";
   background: linear-gradient(
     20deg,
-    var(--css-color),
-    var(--javascript-color),
+    var(--commandline-color),
+    var(--commandline-color)
+  );
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+#blockchain:hover:before {
+  content: "";
+  background: linear-gradient(
+    20deg,
+    var(--blockchain-color),
+    var(--blockchain-color)
+  );
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+#html-css-github:hover:before {
+  content: "";
+  background: linear-gradient(
+    20deg,
     var(--html-color),
-    var(--white-color)
+    var(--css-color),
+    var(--github-color)
   );
   position: absolute;
   height: 100%;
