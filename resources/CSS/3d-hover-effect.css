@@ -34,32 +34,54 @@
   transform-style: preserve-3d;
 }
 
-#html:hover {
-  box-shadow: 0 50px 800px var(--html-color);
-  -webkit-box-shadow: 0 50px 800px var(--html-color);
-  cursor: pointer;
-}
-
-#css:hover {
-  box-shadow: 0 50px 800px var(--css-color);
-  -webkit-box-shadow: 0 50px 800px var(--css-color);
-  cursor: pointer;
-}
-
-#javascript:hover {
-  box-shadow: 0 50px 800px var(--javascript-color);
-  -webkit-box-shadow: 0 50px 800px var(--javascript-color);
-  cursor: pointer;
-}
-
-#html-css-javascript:hover:before {
+#html:hover:before {
   content: "";
-  background: linear-gradient(20deg, var(--css-color), var(--javascript-color), var(--html-color));
+  background: linear-gradient(20deg, var(--html-color), var(--html-color));
   position: absolute;
   height: 100%;
   width: 110%;
   z-index: -1;
-  filter: blur(40px);
+  filter: blur(50px);
+}
+
+#css:hover:before {
+  content: "";
+  background: linear-gradient(20deg, var(--css-color), var(--css-color));
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+#javascript:hover:before {
+  content: "";
+  background: linear-gradient(
+    20deg,
+    var(--javascript-color),
+    var(--javascript-color)
+  );
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+#html-css-javascript:hover:before {
+  content: "";
+  background: linear-gradient(
+    20deg,
+    var(--css-color),
+    var(--javascript-color),
+    var(--html-color),
+    var(--white-color)
+  );
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+  filter: blur(50px);
 }
 
 .container .box .photobox {
