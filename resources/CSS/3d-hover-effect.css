@@ -26,6 +26,7 @@
 
 .container .box:hover {
   box-shadow: 0 50px 800px rgb(0, 166, 255);
+  -webkit-box-shadow: 0 50px 800px rgb(0, 166, 255);
   cursor: pointer;
 }
 

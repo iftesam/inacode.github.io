@@ -72,6 +72,7 @@ body {
     #ff0000
   );
   background-size: 400%;
+  -webkit-background-size: 400%;
   width: calc(100%);
   height: calc(100%);
   z-index: -1000;
@@ -80,6 +81,7 @@ body {
 
 div.shadow:after {
   filter: blur(1000px);
+  -webkit-filter: blur(1000px);
 }
 
 @keyframes animate {
