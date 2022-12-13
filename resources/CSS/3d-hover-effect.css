@@ -4,15 +4,15 @@
 }
 
 :root {
-  --html-color: #e34c26;
-  --css-color: #2965f1;
-  --javascript-color: #f0db4f;
-  --typescript-color: #7cc480;
-  --react-color: #3f77ae;
-  --design-color: #f200ff;
-  --github-color: #ffffff;
-  --blockchain-color: rgba(4, 242, 255, 0.37);
-  --commandline-color: #94605b;
+  --html-color: rgba(227, 76, 38, 0.6);
+  --css-color: rgba(41, 101, 241, 0.6);
+  --javascript-color: rgba(240, 219, 79, 0.6);
+  --typescript-color: rgba(124, 196, 128, 0.6);
+  --react-color: rgba(63, 119, 174, 0.6);
+  --design-color: rgba(242, 0, 255, 0.6);
+  --github-color: rgba(255, 255, 255, 0.6);
+  --blockchain-color: rgba(4, 242, 255, 0.6);
+  --commandline-color: rgba(148, 96, 91, 0.6);
 }
 
 .container {
@@ -34,6 +34,71 @@
   margin: 60px 50px;
   background: #000;
   transform-style: preserve-3d;
+}
+
+.container .box .photobox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contentBox {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  right: 50px;
+  background: rgba(0, 0, 0, 0.526);
+  transform: translateZ(20px) scaleY(0);
+  padding: 40px 200px 30px 20px;
+  transform-origin: top;
+  transition: 0.2s;
+  transform-style: preserve-3d;
+}
+
+.contentBox h1 {
+  font-weight: 800;
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  white-space: nowrap;
+}
+
+#certificate4 {
+  font-size: 12px;
+}
+
+.contentBox h2 {
+  font-weight: 1000;
+  font-size: 14px;
+}
+.container .box:hover .contentBox {
+  transform: translateZ(150px) scaleY(0.65);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/*changing shadow class of college-certificate css code (other Sheet)*/
+.shadow {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.shadow:hover .contentBox {
+  transform: translateZ(50px) scaleY(1.1);
+  color: rgb(255, 255, 255);
+  cursor: grab;
+  padding-right: 50px;
+}
+
+#collegecertificateh1 {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#collegecertificateh2 {
+  font-weight: 1000;
+  font-size: 12px;
 }
 
 #html:hover:before {
@@ -111,71 +176,6 @@
   width: 110%;
   z-index: -1;
   filter: blur(50px);
-}
-
-.container .box .photobox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.contentBox {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  right: 50px;
-  background: rgba(0, 0, 0, 0.526);
-  transform: translateZ(20px) scaleY(0);
-  padding: 40px 200px 30px 20px;
-  transform-origin: top;
-  transition: 0.2s;
-  transform-style: preserve-3d;
-}
-
-.contentBox h1 {
-  font-weight: 800;
-  font-size: 12px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  white-space: nowrap;
-}
-
-#certificate4 {
-  font-size: 12px;
-}
-
-.contentBox h2 {
-  font-weight: 1000;
-  font-size: 14px;
-}
-.container .box:hover .contentBox {
-  transform: translateZ(150px) scaleY(0.65);
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
-/*changing shadow class of college-certificate css code (other Sheet)*/
-.shadow {
-  position: relative;
-  transform-style: preserve-3d;
-}
-
-.shadow:hover .contentBox {
-  transform: translateZ(50px) scaleY(1.1);
-  color: rgb(255, 255, 255);
-  cursor: grab;
-  padding-right: 50px;
-}
-
-#collegecertificateh1 {
-  font-size: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#collegecertificateh2 {
-  font-weight: 1000;
-  font-size: 12px;
 }
 
 @media (max-width: 320px) {
