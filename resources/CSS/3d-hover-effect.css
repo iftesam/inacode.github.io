@@ -3,6 +3,16 @@
   height: 200px;
 }
 
+:root {
+  --html-color: #e34c26;
+  --css-color: #2965f1;
+  --javascript-color: #f0db4f;
+  --typescript-color: #7cc480;
+  --react-color: #3f77ae;
+  --design-color: #f200ff;
+  --white-color: #ffffff;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -24,10 +34,32 @@
   transform-style: preserve-3d;
 }
 
-.container .box:hover {
-  box-shadow: 0 50px 800px rgb(0, 166, 255);
-  -webkit-box-shadow: 0 50px 800px rgb(0, 166, 255);
+#html:hover {
+  box-shadow: 0 50px 800px var(--html-color);
+  -webkit-box-shadow: 0 50px 800px var(--html-color);
   cursor: pointer;
+}
+
+#css:hover {
+  box-shadow: 0 50px 800px var(--css-color);
+  -webkit-box-shadow: 0 50px 800px var(--css-color);
+  cursor: pointer;
+}
+
+#javascript:hover {
+  box-shadow: 0 50px 800px var(--javascript-color);
+  -webkit-box-shadow: 0 50px 800px var(--javascript-color);
+  cursor: pointer;
+}
+
+#html-css-javascript:hover:before {
+  content: "";
+  background: linear-gradient(20deg, var(--css-color), var(--javascript-color), var(--html-color));
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+  filter: blur(40px);
 }
 
 .container .box .photobox {
