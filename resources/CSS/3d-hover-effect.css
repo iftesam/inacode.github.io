@@ -74,6 +74,13 @@
   cursor: pointer;
 }
 
+@media (max-width: 320px) {
+  .photobox-img {
+    width: 200px;
+    height: 138px;
+  }
+}
+
 /*changing shadow class of college-certificate css code (other Sheet)*/
 .shadow {
   position: relative;
@@ -172,11 +179,4 @@
   width: 110%;
   z-index: -1;
   filter: blur(50px);
-}
-
-@media (max-width: 320px) {
-  .photobox-img {
-    width: 200px;
-    height: 138px;
-  }
 }
