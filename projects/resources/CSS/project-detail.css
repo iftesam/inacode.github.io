@@ -4,7 +4,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background: linear-gradient(
-    90deg,
+    9deg,
     rgb(30, 33, 48) 6.8%,
     rgb(74, 98, 110) 131%
   );
@@ -264,7 +264,7 @@ button {
 }
 body {
   background: linear-gradient(
-    90deg,
+    9deg,
     rgb(30, 33, 48) 6.8%,
     rgb(74, 98, 110) 131%
   );
