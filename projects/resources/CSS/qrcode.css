@@ -135,7 +135,7 @@ a#download-button:active {
   background-color: #e6e6e6;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #qr-title {
     position: absolute;
     top: 20%;
@@ -152,6 +152,10 @@ a#download-button:active {
     background-color: #2c2c2c;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  #logo {
+    right: 70%;
   }
 }
 
@@ -181,7 +185,7 @@ a#download-button:active {
     height: 60px;
     width: 60px;
     bottom: 90%;
-    right: 80%;
+    right: 70%;
     transition: all 0.2s ease 0s;
   }
 
