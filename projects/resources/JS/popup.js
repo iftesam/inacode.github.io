@@ -1,3 +1,4 @@
+document.getElementById("inacodeLink").href = "http://www.inacode.io";
 // JavaScript to show and hide the pop-up and modal
 document.getElementById("popup").addEventListener("click", function () {
   // show the modal element when the pop-up is clicked

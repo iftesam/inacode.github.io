@@ -13,6 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow-x: scroll;
 }
 
 #logo {
@@ -20,7 +21,7 @@ body {
   height: 100px;
   width: 100px;
   bottom: 90%;
-  right: 90%;
+  right: 80%;
   transition: all 0.2s ease 0s;
 }
 
@@ -30,7 +31,7 @@ body {
 
 #qr-title {
   position: absolute;
-  top: 28%;
+  top: 20%;
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 40px;
