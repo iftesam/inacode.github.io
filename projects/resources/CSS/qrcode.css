@@ -180,12 +180,29 @@ a#download-button:active {
     position: absolute;
     height: 60px;
     width: 60px;
-    bottom: 85%;
+    bottom: 90%;
     right: 80%;
     transition: all 0.2s ease 0s;
   }
 
   #logo:hover {
-    height: 104px;
+    height: 62px;
+  }
+
+  a#download-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 77%;
+    margin: 0;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #ff9900;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 0;
   }
 }
