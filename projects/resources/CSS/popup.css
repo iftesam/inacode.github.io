@@ -13,6 +13,12 @@
   color: #eee;
 }
 
+@media (max-width: 768px) {
+  #popup {
+    display: none;
+  }
+}
+
 #popup:hover {
   background: linear-gradient(to right, #ff5e62 0%, #ff9f1c 100%);
   box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.2),
@@ -53,7 +59,8 @@
 }
 
 #modal div:hover {
-  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 12px 40px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2),
+    0 12px 40px 0 rgba(255, 255, 255, 0.19);
 }
 
 #copyright {
