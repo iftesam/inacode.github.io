@@ -3,11 +3,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: linear-gradient(
-    9deg,
+  /* background: linear-gradient(
+    90deg,
     rgb(30, 33, 48) 6.8%,
     rgb(74, 98, 110) 131%
-  );
+  ); */
+  background: #343f4f;
 }
 
 .projectlogo {
@@ -263,11 +264,12 @@ button {
   font: 1em/1.5 Hind, sans-serif;
 }
 body {
-  background: linear-gradient(
-    9deg,
+  /* background: linear-gradient(
+    90deg,
     rgb(30, 33, 48) 6.8%,
     rgb(74, 98, 110) 131%
-  );
+  ); */
+  background: #343f4f;
   height: 100vh;
 }
 button {
