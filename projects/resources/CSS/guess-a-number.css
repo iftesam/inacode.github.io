@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #343f4f;
+}
+
+#logo {
+  position: absolute;
+  top: 2%;
+  left: 14.8%;
+  z-index: 1;
+}
+
+.projectlogo {
+  height: 100px;
+  padding: 1.5% 0 0 1.5%;
+  transition: all 0.2s ease 0s;
+}
+
+.projectlogo:hover {
+  height: 104px;
+}
+
+#game {
+  margin-top: 70%;
+}
+#game-title {
+  text-align:center;
+  color: rgb(255, 255, 255);
+  margin: 1em 0;
+  font-size: 2em;
+}
+
+#message {
+  font-size: larger;
+  margin: 1em 0;
+  text-align: justify;
+  color: rgb(222, 211, 211);
+}
+
+form {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+label {
+  margin-right: 0.5em;
+}
+
+input[type="number"] {
+  margin-top: 20px;
+  width: 6em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-size: 1.8em;
+}
+
+#guess {
+  margin-top: 20px;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, #f8c6a0, #f9d3b3);
+  color: #333;
+  cursor: pointer;
+  font-weight: bold; /* Make the text in the button bold */
+}
+
+#guess:hover {
+  background-color: #f9d3b3;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#guess:active {
+  background-color: #f6bf9a;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#reset-button {
+  margin-top: 1em;
+  display: none;
+  background-color: #f8a0a0;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s;
+  font-size: 1.5em;
+  border-radius: 3px; /* Give the button rounded edges */
+}
+
+#reset-button:hover {
+  background-color: #f9d3b3;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#reset-button:active {
+  background-color: #f6bf9a;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#guess-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

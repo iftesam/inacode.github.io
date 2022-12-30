@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/CSS/popup.css" />
+    <script src="./resources/JS/popup.js" defer></script>
+    <link rel="stylesheet" href="./resources/CSS/guess-a-number.css" />
+    <script src="./resources/JS/guess-a-number.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>Guess the Number | INACODE</title>
+    <link
+      rel="shortcut icon"
+      type="image"
+      href="../resources/images/inacode-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@500&family=Work+Sans&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML COMPILER (Live Preview) | INACODE</title>
+  </head> -->
+  <body>
+    <div id="logo">
+      <a id="inacodeLink" href="#"
+        ><img
+          class="projectlogo"
+          src="../resources/images/inacode-logo.png"
+          alt="HOME"
+      /></a>
+    </div>
+    <div id="game">
+      <h1 id="game-title">Guess the Number</h1>
+      <p id="message"></p>
+      <form id="guess-form">
+        <label for="guess-input">Enter your guess:</label>
+        <input type="number" id="guess-input" min="1" max="100" />
+        <button type="submit" id="guess">Guess</button>
+      </form>
+      <button id="reset-button">Start Over</button>
+    </div>
+    <div id="popup">Documentation</div>
+
+    <!-- HTML for the modal -->
+    <div id="modal" style="display: none">
+      <div>
+        <p id="drag-message">(This pop-up is movable.)</p>
+        <h1>Step-by-step instructions for making this webpage:</h1>
+        <p>
+          <br />
+          <br />Following are the steps involved in scripting a game like this
+          in a webpage:<br />
+          <br /><br />
+          <strong>1.</strong> Create an HTML file and add the basic structure of
+          the HTML document, including the html, head, and body tags.<br />
+          <br />
+          <strong>2.</strong> Inside the head element, add a title element to
+          specify the title of the webpage. Then, add a style element to define
+          the CSS styles for the page.<br />
+          <br />
+          <strong>3.</strong> Inside the body element, add a div element with an
+          id of "game". Inside this div, add an h1 element for the title of the
+          game, and a p element for the message explaining the game.<br />
+          <br />
+          <strong>4.</strong> Add a form element inside the "game" div. This
+          form should contain a label element for the input field, an input
+          element for the user to enter their guess, and a button element to
+          submit the guess.<br />
+          <br />
+          <strong>5.</strong> Add another button element outside the form with
+          an id of "reset-button". This button will allow the user to start a
+          new game. <br />
+          <br />
+          <strong>6.</strong> Add a script element at the bottom of the body
+          element to define the JavaScript logic for the game.<br />
+          <br />
+          <strong>7.</strong> Inside the script element, define variables for
+          the form element, reset button, and message element. Then, define
+          variables for the secret number and the remaining number of
+          guesses.<br />
+          <br />
+          <strong>8.</strong> Create a function called "startGame" to initialize
+          the game. This function should set the secret number to a random
+          number between 1 and 100, set the remaining number of guesses to 10,
+          and make the reset button visible. <br />
+          <br />
+          <strong>9.</strong> Add an event listener to the form element to
+          listen for the "submit" event. Inside the event handler function,
+          check if the user's guess is correct, and update the message and the
+          remaining number of guesses accordingly. If the user has no more
+          remaining guesses, or if they guess the correct number, display a
+          message indicating whether they won or lost, and hide the form. <br />
+          <br />
+          <strong>10.</strong> Add an event listener to the reset button to
+          listen for the "click" event. Inside the event handler function, call
+          the "startGame" function to start a new game.<br />
+          <br /><br /><br /><br />
+        </p>
+        <p id="copyright">Ⓒ inacode.io</p>
+        <button id="minimize-button">-</button>
+
+        <button id="close-button">Close</button>
+      </div>
+    </div>
+    <div class="bubble" style="display: none">
+      <h1>.</h1>
+      <h1 id="square-box">□</h1>
+    </div>
+  </body>
+</html>
