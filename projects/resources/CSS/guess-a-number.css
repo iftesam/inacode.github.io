@@ -24,9 +24,10 @@ body {
 
 #game {
   margin-top: 70%;
+  padding: 7%;
 }
 #game-title {
-  text-align:center;
+  text-align: center;
   color: rgb(255, 255, 255);
   margin: 1em 0;
   font-size: 2em;
@@ -44,6 +45,7 @@ form {
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 label {
@@ -59,10 +61,12 @@ input[type="number"] {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   font-size: 1.8em;
+  text-align: center;
 }
 
 #guess {
   margin-top: 20px;
+  text-align: center;
   padding: 0.5em 1em;
   font-size: 1.1em;
   border: none;
@@ -94,12 +98,12 @@ input[type="number"] {
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.2s;
   font-size: 1.5em;
-  border-radius: 3px; /* Give the button rounded edges */
+  border-radius: 3px; /* Give the button round edges */
 }
 
 #reset-button:hover {
   background-color: #f9d3b3;
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
