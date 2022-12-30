@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/CSS/popup.css" />
+    <script src="./resources/JS/popup.js" defer></script>
+    <link rel="stylesheet" href="./resources/CSS/html-compiler.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"></script>
+    <script src="./resources/JS/html-compiler.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>HTML COMPILER (Live Preview) | INACODE</title>
+    <link
+      rel="shortcut icon"
+      type="image"
+      href="../resources/images/inacode-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@500&family=Work+Sans&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML COMPILER (Live Preview) | INACODE</title>
+  </head> -->
+  <body>
+    <div id="logo">
+      <a id="inacodeLink" href="#"
+        ><img
+          class="projectlogo"
+          src="../resources/images/inacode-logo.png"
+          alt="HOME"
+      /></a>
+    </div>
+    <div class="heading">HTML COMPILER (Live Preview)</div>
+    <div id="compiler" class="side-by-side">
+      <!-- Input element -->
+      <div id="input"></div>
+      <!-- Output element -->
+      <iframe id="output" srcdoc=""></iframe>
+    </div>
+    <!-- Toggle button -->
+    <button id="toggle-button">Hide Compiler</button>
+    <div id="popup">Documentation</div>
+
+    <!-- HTML for the modal -->
+    <div id="modal" style="display: none">
+      <div>
+        <p id="drag-message">(This pop-up is movable.)</p>
+        <h1>Step-by-step instructions for making this webpage:</h1>
+        <p>
+          <br />
+          <br />Here are the steps involved in scripting a webpage like this
+          that allows users to use the HTML compiler with live preview:<br />
+          <br /><br />
+          <strong>1.</strong> Start by creating an HTML file and add the
+          necessary HTML tags: html, head, and body.<br />
+          <br />
+          <strong>2.</strong> In the head tag, add a title tag with the title of
+          the webpage.<br />
+          <br />
+          <strong>3.</strong> Include the Ace editor library by adding the
+          following script tag:
+          "https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"<br />
+          <br />
+          <strong>4.</strong> Add a style tag in the head to define the styling
+          for the webpage.<br />
+          <br />
+          <strong>5.</strong> Add the layout for the webpage using HTML tags.
+          The layout consists of a heading, an input element, and an output
+          element. The input element is used to enter HTML code, and the output
+          element is used to display the compiled HTML.<br />
+          <br />
+          <strong>6.</strong> Add the following CSS styles to the style tag or
+          CSS style file to style the layout: <br />
+          <br />
+          <strong>-o</strong> Set a body background color. <br /><br />
+          <strong>-o</strong> Style the heading by setting the font family,
+          size, and weight, and add a blinking animation. <br /><br />
+          <strong>-o</strong> Set the width, padding, and margin for the
+          compiler element and add a flexbox layout.<br /><br />
+          <strong>-o</strong> Add styles for the side-by-side layout of the
+          input and output elements.<br /><br />
+          <strong>-o</strong> Style the input and output elements by setting the
+          width, height, border, border radius, box shadow, transition, color,
+          and background color.<br /><br />
+          <strong>-o</strong> Add styles for the focused state of the input and
+          output elements.<br />
+          <br /><br />
+          <strong>7.</strong> Add the necessary HTML tags to the body to create
+          the layout of the webpage. <br />
+          <br />
+          <strong>8.</strong> The script tag was used to initialize the Ace
+          editor and add event listeners for the input and output elements. Here
+          are the following of what the script tag can do:<br />
+          <br />
+          <strong>-o</strong> The Ace editor library is initialized for the
+          input and output elements by calling the ace.edit function and passing
+          in the ID of the element. <br /><br />
+          <strong>-o</strong> The theme and mode for the input and output
+          elements are set using the setTheme and setMode functions. The theme
+          sets the color scheme for the code editor, and the mode sets the
+          syntax highlighting for the language being edited (in this case,
+          HTML). <br /><br />
+          <strong>-o</strong> The output element is set to read-only using the
+          setReadOnly function, which prevents the user from editing the
+          compiled HTML code.<br /><br />
+          <strong>-o</strong> An event listener is added to the input element
+          using the on function. The event listener listens for changes to the
+          input element and updates the output element with the new HTML code
+          using the setValue function. This allows the user to see the compiled
+          HTML code as they type.<br />
+          <br /><br />
+
+          <br /><br /><br /><br />
+        </p>
+        <p id="copyright">Ⓒ inacode.io</p>
+        <button id="minimize-button">-</button>
+
+        <button id="close-button">Close</button>
+      </div>
+    </div>
+    <div class="bubble" style="display: none">
+      <h1>.</h1>
+      <h1 id="square-box">□</h1>
+    </div>
+  </body>
+</html>
