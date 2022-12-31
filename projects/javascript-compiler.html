@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/CSS/popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.8/ace.js"></script>
+    <script src="./resources/JS/popup.js" defer></script>
+    <link rel="stylesheet" href="./resources/CSS/js-compiler.css" />
+    <script src="./resources/JS/js-compiler.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>JavaScript Compiler | INACODE</title>
+    <link
+      rel="shortcut icon"
+      type="image"
+      href="../resources/images/inacode-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@500&family=Work+Sans&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="logo">
+      <a id="inacodeLink" href="#"
+        ><img
+          class="projectlogo"
+          src="../resources/images/inacode-logo.png"
+          alt="HOME"
+      /></a>
+    </div>
+
+    <div id="title"><h1>JavaScript Compiler</h1></div>
+
+    <div id="js-compiler">
+      <div id="editor-wrapper">
+        <div id="editor" contenteditable></div>
+      </div>
+      <button id="run">Run</button>
+      <div id="output-wrapper">
+        <div id="output"></div>
+        <button id="clear-output">Clear Output</button>
+      </div>
+    </div>
+    <div id="popup">Documentation</div>
+
+    <!-- HTML for the modal -->
+    <div id="modal" style="display: none">
+      <div>
+        <p id="drag-message">(This pop-up is movable.)</p>
+        <h1>Step-by-step instructions for making this webpage:</h1>
+        <p>
+          <br />
+          <br />Here are the steps involved in scripting a webpage like this
+          that allows users to use the JavaScript compiler:<br />
+          <br /><br />
+          <strong>1.</strong> Create a new HTML file and write the basic
+          structure of an HTML document, including the html, head, and body
+          tags.<br />
+          <br />
+          <strong>2.</strong> In the head section, add a title tag to specify
+          the title of your webpage, which will appear in the browser tab.<br />
+          <br />
+          <strong>3.</strong> Inside the body section, add a div element with an
+          id of "js-compiler" to act as a container for the rest of the content.
+          This div will hold the code editor and the buttons for running and
+          clearing the output of the code.<br />
+          <br />
+          <strong>4.</strong> Within the "js-compiler" div, add a div element
+          with an id of "editor" to create a text area for users to input their
+          JavaScript code.<br />
+          <br />
+          <strong>5.</strong> Use the style tag to add CSS styles to the
+          "editor" div to customize its appearance. You can add a border, set
+          the background color, define the font size, and more. You can also use
+          the ::before and ::after pseudo-elements to add placeholder text and
+          instructions to the editor.<br />
+          <br />
+          <strong>6.</strong> Add a button with an id of "run" within the
+          "js-compiler" div to allow users to execute their code. Add a button
+          with an id of "clear-output" to enable users to clear the output of
+          their code. <br /><br />
+          <strong>7.</strong> Add a div element with an id of "output" to
+          display the results of the user's code. Use the style tag to add CSS
+          styles to the "output" div to customize its appearance, such as adding
+          a border, setting the background color, and defining the font size.
+          <br />
+          <br />
+          <strong>8.</strong> In the head section, add a script tag and set the
+          src attribute to the URL of the Ace JavaScript library to include it
+          in your webpage. This library provides an API for creating a code
+          editor.<br />
+          <br />
+          <strong>9.</strong> In the script tag, use JavaScript code to
+          initialize the Ace code editor and bind it to the "editor" div.<br />
+          <br />
+          <strong>10.</strong> Write JavaScript code to handle the click event
+          of the "run" button. This code should retrieve the code from the
+          editor, execute it, and display the results in the "output" div.
+          <br /><br />
+          <strong>11.</strong> Write JavaScript code to handle the click event
+          of the "clear-output" button. This code should clear the contents of
+          the "output" div.
+          <br />
+          <br />
+          <strong>12.</strong> Save your HTML and CSS files and open them in a
+          web browser to view and test your webpage.<br />
+          <br /><br />
+
+          <br /><br /><br /><br />
+        </p>
+        <p id="copyright">Ⓒ inacode.io</p>
+        <button id="minimize-button">-</button>
+
+        <button id="close-button">Close</button>
+      </div>
+    </div>
+    <div class="bubble" style="display: none">
+      <h1>.</h1>
+      <h1 id="square-box">□</h1>
+    </div>
+  </body>
+</html>
