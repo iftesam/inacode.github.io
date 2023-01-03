@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #343f4f;
+}
+
+#logo {
+  position: absolute;
+  top: 1.5%;
+  left: 14.8%;
+  z-index: 1;
+}
+
+.projectlogo {
+  height: 100px;
+  transition: all 0.2s ease 0s;
+}
+
+.projectlogo:hover {
+  height: 104px;
+}
+
+#content-box {
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  margin: 13% 0 10% 0;
+  padding-top: 30px;
+}
+
+#title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 25px;
+  color: white;
+  padding-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+textarea {
+  width: 60%;
+  height: 200px;
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#speak{
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 149, 0, 0.972);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#stop {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 36px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(249, 80, 80);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#speak:hover {
+  background-color: rgb(255, 128, 0);
+}
+
+#stop:hover {
+  background-color: rgb(255, 46, 46);
+}
+
+select {
+  width: 60%;
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

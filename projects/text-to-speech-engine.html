@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/CSS/popup.css" />
+    <link rel="stylesheet" href="./resources/CSS/text-to-speech.css" />
+    <script src="./resources/JS/popup.js" defer></script>
+    <script src="./resources/JS/text-to-speech.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <title>Text-to-Speech Engine | INACODE</title>
+    <link
+      rel="shortcut icon"
+      type="image"
+      href="../resources/images/inacode-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@500&family=Work+Sans&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="logo">
+      <a id="inacodeLink" href="#"
+        ><img
+          class="projectlogo"
+          src="../resources/images/inacode-logo.png"
+          alt="HOME"
+      /></a>
+    </div>
+    <div id="content-box">
+      <h1 id="title">Text-to-Speech Engine:</h1>
+      <textarea id="text"></textarea>
+      <br />
+      <button id="speak">Speak</button>
+      <button id="stop">Stop</button>
+      <br />
+      <label for="voice" style="padding-left: 20%; color: white">Voice:</label>
+      <select id="voice"></select>
+    </div>
+    <div id="popup">Documentation</div>
+    <!-- HTML for the modal -->
+    <div id="modal" style="display: none">
+      <div>
+        <p id="drag-message">(This pop-up is movable.)</p>
+        <h1>Step-by-step instructions for making this webpage:</h1>
+        <p>
+          <br />
+          <br />Here are the steps involved in scripting a webpage like this
+          that allows users to convert text to speech:<br />
+          <br /><br />
+          <strong>1.</strong> First, you will need to set up the structure of
+          the webpage using HTML. Open a new file in your text editor and begin
+          the HTML document with the html element. Inside the html element, you
+          should include the head element and the body element.<br />
+          <br />
+          <strong>2.</strong> The head element contains metadata about the
+          webpage that is not displayed to the user. This can include the title
+          of the webpage, which is displayed in the browser tab, as well as
+          links to external resources such as stylesheets and scripts. Inside
+          the head element, you should include a title element to give your
+          webpage a title, and a style element to define the styles for your
+          webpage using CSS.<br />
+          <br />
+          <strong>3.</strong> The body element contains the content of the
+          webpage that will be displayed to the user. You can use various HTML
+          elements such as div, h1, and textarea to create the layout and
+          content of your webpage. A div element is a container element that can
+          be used to group other elements together and apply styles to them. An
+          h1 element is a heading element used to display large, bold text. A
+          textarea element is an input field that allows the user to enter and
+          edit multiple lines of text.<br />
+          <br />
+          <strong>4.</strong> To create buttons on your webpage, you can use the
+          button element. You can customize the appearance of your buttons using
+          CSS.<br />
+          <br />
+          <strong>5.</strong> To create a dropdown menu for selecting options on
+          your webpage, you can use the select element and the option element.
+          The select element creates a dropdown menu, and the option element is
+          used to define the options that will be displayed in the menu.<br />
+          <br />
+          <strong>6.</strong> To add interactivity to your webpage, you have to
+          use JavaScript. To use JavaScript, you will need to add a script
+          element to your HTML document, either in the head element or the body
+          element. Inside the script element, you can write JavaScript code to
+          perform various actions such as processing user input, making requests
+          to servers, and modifying the content of the webpage.<br /><br />
+          <strong>7.</strong> The speechSynthesis object is part of the Web
+          Speech API and is used to control the text-to-speech synthesis on your
+          webpage. You can use the speechSynthesis.addEventListener function to
+          set up an event listener that listens for the "voiceschanged" event,
+          and runs a specified function when the event is triggered.
+          <br />
+          <br />
+          <strong>8.</strong> The populateVoices function is used to populate
+          the dropdown menu with the available voices for text-to-speech
+          synthesis. This function uses the speechSynthesis.getVoices() method
+          to get a list of available voices, and then it creates option elements
+          for each voice and appends them to the select element.<br />
+          <br />
+          <strong>9.</strong> In addition to the "Speak" button, the webpage
+          also includes a "Stop" button. This button allows the user to stop the
+          text-to-speech synthesis if it is currently in progress. The "Stop"
+          button is created using the button element and its appearance can be
+          customized using CSS.<br />
+          <br />
+          <strong>10.</strong> The speechSynthesis.cancel() method cancels any
+          ongoing utterances and clears the queue of any pending utterances.
+          This ensures that the text-to-speech synthesis stops immediately when
+          the "Stop" button is clicked. <br /><br />
+          <strong>11.</strong> Once you have written your HTML, CSS, and
+          JavaScript code, save the file with a .html extension and open it in a
+          web browser to view your webpage. You can continue to edit and refine
+          your code as needed to create the desired functionality and design for
+          your webpage.<br />
+          <br /><br />
+          <br /><br /><br /><br />
+        </p>
+        <p id="copyright">Ⓒ inacode.io</p>
+        <button id="minimize-button">-</button>
+
+        <button id="close-button">Close</button>
+      </div>
+    </div>
+    <div class="bubble" style="display: none">
+      <h1>.</h1>
+      <h1 id="square-box">□</h1>
+    </div>
+  </body>
+</html>
