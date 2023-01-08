@@ -1,5 +1,7 @@
 document.getElementById("inacodeLink").href = "http://www.inacode.io";
 // document.getElementById("backward").href = "";
+document.getElementById("downloadresume").href =
+  "./resources/Data/RESUME_Iftesam-Nabi_Front-End-Developer.pdf";
 document.getElementById("videobanners").href =
   "https://www.youtube.com/@inacode9173";
 document.getElementById("videobanners").target = "_blank";
