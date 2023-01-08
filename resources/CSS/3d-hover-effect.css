@@ -1,3 +1,8 @@
+/* .photobox-img {
+  width: 200px;
+  height: 138px;
+} */
+
 .photobox-img {
   width: 290px;
   height: 200px;
@@ -27,12 +32,21 @@
   transform-style: preserve-3d;
 }
 
+/* .container .box {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  margin: 6px 5px;
+  background: transparent;
+  transform-style: preserve-3d;
+} */
+
 .container .box {
   position: relative;
   width: 250px;
   height: 200px;
   margin: 60px 50px;
-  background: #000;
+  background: transparent;
   transform-style: preserve-3d;
 }
 
